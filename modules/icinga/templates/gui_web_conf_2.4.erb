@@ -1,0 +1,54 @@
+# icinga-web apache configuration
+# - Enable all options .htaccess
+# - Add extjs library to alias
+#
+AliasMatch /icinga-web/modules/([A-Za-z0-9]*)/resources/styles/([A-Za-z0-9]*\.css)$ /usr/share/icinga-web/app/modules/$1/pub/styles/$2
+AliasMatch /icinga-web/modules/([A-Za-z0-9]*)/resources/images/([A-Za-z_\-0-9]*\.(png|gif|jpg))$ /usr/share/icinga-web/app/modules/$1/pub/images/$2
+
+
+Alias /icinga-web/js/ext3 /usr/share/icinga-web/lib/ext3
+Alias /icinga-web /usr/share/icinga-web/pub
+
+<DirectoryMatch /usr/share/icinga-web/app/modules/\w+/pub/styles/>
+<% if scope.function_versioncmp([apache_version,'2.4']) < 0 -%>
+#    Order allow,deny
+#    Allow from all
+<% else -%>
+#    Require all granted
+<% end -%>
+<%= scope.lookupvar('icinga::gui::apache_allow_stanza') %>
+</DirectoryMatch>
+
+<DirectoryMatch /usr/share/icinga-web/app/modules/\w+/pub/images/>
+<% if scope.function_versioncmp([apache_version,'2.4']) < 0 -%>
+#    Order allow,deny
+#    Allow from all
+<% else -%>
+#    Require all granted
+<% end -%>
+<%= scope.lookupvar('icinga::gui::apache_allow_stanza') %>
+</DirectoryMatch>
+
+
+<Directory /usr/share/icinga-web/lib/ext3>
+<% if scope.function_versioncmp([apache_version,'2.4']) < 0 -%>
+#    Order allow,deny
+#    Allow from all
+<% else -%>
+#    Require all granted
+<% end -%>
+<%= scope.lookupvar('icinga::gui::apache_allow_stanza') %>
+</Directory>
+
+<Directory /usr/share/icinga-web/pub>
+	DirectoryIndex index.php
+	Options FollowSymLinks
+	AllowOverride all
+<%= if scope.function_versioncmp([apache_version,'2.4']) < 0 -%>
+#    Order allow,deny
+#    Allow from all
+<% else -%>
+#    Require all granted
+<% end -%>
+<%= scope.lookupvar('icinga::gui::apache_allow_stanza') %>
+</Directory>

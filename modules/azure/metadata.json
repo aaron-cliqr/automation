@@ -1,0 +1,28 @@
+{
+  "name": "puppetlabs-azure",
+  "version": "0.0.3",
+  "source": "https://github.com/puppetlabs/puppetlabs-azure",
+  "author": "puppetlabs",
+  "license": "Apache License, Version 2.0",
+  "summary": "The Azure module installs and configures the Windows Azure Linux agent.",
+  "description": "The Azure module installs and configures the Windows Azure Linux agent.",
+  "project_page": "https://github.com/puppetlabs/puppetlabs-azure",
+  "dependencies": [
+
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "Modulefile": "e55c2f37144f685ae464890b536a354c",
+    "README.md": "50a7cba354b909f98093d669403f8b82",
+    "Rakefile": "ab253b919e7093c2a5eb7adf0e39ffbc",
+    "lib/facter/azure.rb": "cb4fc6bcef7a125e4f195c68fe85e9b0",
+    "manifests/init.pp": "63ddc81c4228ff1b1cb31f7c418e70e4",
+    "spec/classes/azure_init_spec.rb": "606473c08b236ec50d51de62a5c9208e",
+    "spec/spec.opts": "c407193b3d9028941ef59edd114f5968",
+    "spec/spec_helper.rb": "1ada069d7869a2d9223d2e6a4bf3b2a7",
+    "templates/waagent.conf.erb": "d20459022a3a4ddd6ade73b3944d7df1",
+    "tests/init.pp": "4b54b7c96f985a8df078caf7e10debfa"
+  }
+}

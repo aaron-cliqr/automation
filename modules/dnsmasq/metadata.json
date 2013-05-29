@@ -1,0 +1,35 @@
+{
+  "name": "puppet-dnsmasq",
+  "version": "1.1.0",
+  "source": "git://github.com/rlex/puppet-dnsmasq.git",
+  "author": "Lex Rivera <me@lex.io>",
+  "license": "Creative Commons Attribution 3.0 Unported License",
+  "summary": "Puppet Dnsmasq management module",
+  "description": "A module to deploy and manage the dnsmasq DNS/DHCP/TFTP server",
+  "project_page": "https://github.com/rlex/puppet-dnsmasq",
+  "dependencies": [
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 2.2.1"
+    }
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "Changelog": "416d501c43603befae637f81d03b4d3f",
+    "Modulefile": "9dd6fe5c82b9fbf5463c5d48a9244652",
+    "README.md": "c3f19d400c4b004faa054bdcfc02d4cb",
+    "manifests/address.pp": "c9773988e04adb247339e6ddf38d2688",
+    "manifests/dhcp.pp": "9b94680e878122513667532565ed170f",
+    "manifests/dhcpoption.pp": "936ff052a06c19a865173b4329805662",
+    "manifests/dhcpstatic.pp": "17b9523194606e6779415246dee85e33",
+    "manifests/init.pp": "79776f1cfbdd9e5f1a92c030312ebfa8",
+    "manifests/params.pp": "d51eea30a3b8ffeffeb0c65436839110",
+    "templates/address.erb": "c26b7e715fc3eb3a73ba71567a68f6be",
+    "templates/dhcp.erb": "349b7119b8913deb3bd2f06343c82118",
+    "templates/dhcpoption.erb": "acc6d56793407314a081e8bb43a5882d",
+    "templates/dhcpstatic.erb": "00c3ee82a53bb537b672faa2f8af920f",
+    "templates/dnsmasq.conf.erb": "c053388dea8f111fb771e879985ab2e9"
+  }
+}

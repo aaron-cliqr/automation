@@ -1,0 +1,54 @@
+{
+  "name": "rendhalver-icinga",
+  "version": "1.1.0",
+  "source": "UNKNOWN",
+  "author": "rendhalver",
+  "license": "Apache License, Version 2.0",
+  "summary": "manage an icinga server",
+  "description": "manage icinga server with puppet",
+  "project_page": "https://github.com/rendhalver/puppet-icinga",
+  "dependencies": [
+    {
+      "name": "rendhalver/pnp4nagios",
+      "version_requirement": ">=0.1.0"
+    },
+    {
+      "name": "puppetlabs/apache",
+      "version_requirement": ">=0.6.0"
+    },
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">=0.0.1"
+    }
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "Modulefile": "712903ad7fcfe6cda1d39b8fa7feb467",
+    "README.md": "0ec7bbf9343ee223b69f7a10d9a5a4fb",
+    "manifests/config.pp": "91fdf92bc34b8a547444fb44e5c089c3",
+    "manifests/gui.pp": "b34cf8afebf28f38ea9a3f7a420250bf",
+    "manifests/idoconfig.pp": "70237422a7ebea9fdcb7ee83f2bd08a3",
+    "manifests/idoservice.pp": "c767e3496e1d2c1ff6e5aa8f37444e54",
+    "manifests/init.pp": "9f4a65b38e412dd191403043338e6301",
+    "manifests/install.pp": "a13bd4417d961458f9d45cb0cf2d73a2",
+    "manifests/params.pp": "e0edd8b97b46ce7e1c1113d044202569",
+    "manifests/service.pp": "abffb01165dc85f60a857c2732079931",
+    "templates/access.xml.erb": "e9b9b249867030367c70cde6bd5f2f26",
+    "templates/apache.conf.erb": "9203dc663725e017a738d2cc1938a6d5",
+    "templates/auth.xml.erb": "507d47981f38c6c91643a930c4bfea8d",
+    "templates/cgi.cfg.erb": "73a16836473972afeae3e5faacb96c38",
+    "templates/databases.xml.erb": "5de0b62e5a2836a4e7d5c671a322bf37",
+    "templates/gui_classic_conf.erb": "1d47afac21f32c3f871b7b95db454d99",
+    "templates/gui_web_conf.erb": "64227b9f412c2af4103746c7b15301d7",
+    "templates/gui_web_conf_2.4.erb": "34eec40cbea811e1da01e4fd669c5458",
+    "templates/icinga.cfg.erb": "f82e3c384b1f35cc2f39553cba6ea9d0",
+    "templates/icinga_auth_conf.erb": "c843a43913e95d7b1238767c79b85fcc",
+    "templates/icinga_auth_conf_2.4.erb": "d83dc7274d741a2fedc1d514933edf34",
+    "templates/ido2db.cfg.erb": "e9824b189ea0ce86e30974e21920efff",
+    "templates/idomod.cfg.erb": "5e4313bcdb163496619ee8a17afaa5f6",
+    "templates/pnp4nagios_apache.erb": "97c62846e64605d647021a93137dd137",
+    "templates/resource.cfg.erb": "1ee7fc0ea02217c08ceea552eec057ac"
+  }
+}

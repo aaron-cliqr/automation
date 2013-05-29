@@ -1,0 +1,27 @@
+{
+  "types": [
+
+  ],
+  "license": "Apache License, Version 2.0",
+  "source": "git://github.com/eoly/puppet-rancid",
+  "version": "0.0.1",
+  "author": "eolsen",
+  "dependencies": [
+
+  ],
+  "project_page": "https://github.com/eoly/puppet-rancid",
+  "description": "This module manages the installation and management of Rancid.",
+  "summary": "Install and configure Rancid package.",
+  "name": "eolsen-rancid",
+  "checksums": {
+    "manifests/package.pp": "f9fddbe4ad4599e710540f634e908704",
+    "README.md": "265bd0f62025184de6625d66c5204f74",
+    "templates/router.db.erb": "cf8327436bcf2c71f37e23d5c4142d3b",
+    "Modulefile": "597489d014d38c73dab573f0ca7e3627",
+    "manifests/params.pp": "9628d0acde2a6547cb03fca301da4b81",
+    "manifests/init.pp": "c4abb4a2543dca931c80ebe5e1e00b0c",
+    "templates/rancid.conf.debian.erb": "5439a9e7dc41a5832b0581f06e2d6e23",
+    "manifests/router_db.pp": "010219c727cc6ced0239c55fc2c1ff32",
+    "templates/rancid-cron.debian.erb": "5395f8658be24d62e1eea36543431900"
+  }
+}

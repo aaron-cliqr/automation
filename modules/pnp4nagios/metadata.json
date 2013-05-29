@@ -1,0 +1,32 @@
+{
+  "name": "rendhalver-pnp4nagios",
+  "version": "0.1.0",
+  "source": "UNKNOWN",
+  "author": "rendhalver",
+  "license": "Apache License, Version 2.0",
+  "summary": "manage pnp4nagios",
+  "description": "manage pnp4nagiods with puppet",
+  "project_page": "https://github.com/rendhalver/puppet-pnp4nagios",
+  "dependencies": [
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">=0.0.1"
+    }
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "Modulefile": "310dcd7d1de3fab3cd330caadde60076",
+    "README.md": "f5704ddc7af81146fcf649851e1770fa",
+    "manifests/config.pp": "f6407e9b442090a5a330e886b2291004",
+    "manifests/init.pp": "172e7f89e53a4784952159a50cd3f45b",
+    "manifests/install.pp": "1f2d9b6612e28d91fd02a9fd44d97b5c",
+    "manifests/params.pp": "ddee7ceea96b469a3d8439b8558fcb30",
+    "manifests/service.pp": "bb5166199cb9903677a1b2cf7afd1380",
+    "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
+    "templates/config.php.erb": "1ac75f7ef00ad2702be957a8e3afd199",
+    "templates/npcd.cfg.erb": "c08cbc793263d6abac4d32a9eecdb1e0",
+    "tests/init.pp": "25cf188f12399f692c4264fc7f64a1bd"
+  }
+}

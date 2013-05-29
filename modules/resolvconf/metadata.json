@@ -1,0 +1,25 @@
+{
+  "checksums": {
+    "tests/init.pp": "4675bc38bdfec281e323a6493dc98528",
+    "manifests/init.pp": "ce3a756e6114a565b9f82be5c48707be",
+    "README.md": "4b552e0eb3c14a12e87a0d36c786043b",
+    "ChangeLog": "45d064bbcce951d4f4525289549d6a4d",
+    "Modulefile": "c8f2504730e81a811627e9789a425b76",
+    "templates/resolv.conf.erb": "591eafb1b796a5d750ff1bb74a014d28",
+    "LICENSE": "83e46d88c72d131428fd758472adc03a"
+  },
+  "license": "Apache 2.0",
+  "source": "git://github.com/thias/puppet-resolvconf",
+  "description": "Manage /etc/resolv.conf with Puppet",
+  "version": "0.0.2",
+  "types": [
+
+  ],
+  "summary": "/etc/resolv.conf module",
+  "name": "thias-resolvconf",
+  "project_page": "https://github.com/thias/puppet-resolvconf",
+  "author": "Matthias Saou",
+  "dependencies": [
+
+  ]
+}
